@@ -75,7 +75,7 @@ def data_filter(DATA):
     filtered = data[(data >= low) & (data <= high)]
     return filtered
 
-#DATA_FILE = 'C:\\Users\\aclark2\\Desktop\\ESP 32\\joined_file.txt' #Automatically use joined file
+#DATA_FILE = 'PATH\\TO\\joined_file.txt' #Automatically use joined file
 
 BH_list = []
 Veto_list = []
@@ -1198,17 +1198,17 @@ if __name__ == "__main__":
     #Run ID and folder paths
     run_num = "Run 75"
 
-    save_folder_path = 'C:\\Users\\alexc\\Desktop\\KoForce GPS DAQ\\ESP 32\\Graphs\\'
+    save_folder_path = 'PATH\\TO\\Graphs\\'
     save_folder = os.path.join(save_folder_path, run_num)
 
     os.makedirs(save_folder, exist_ok=True)  
 
     summary_file_path = os.path.join(save_folder, 'summary_file')
 
-    data_folder_path = 'C:\\Users\\alexc\\Desktop\\KoForce GPS DAQ\\ESP 32\\GPS Data\\'
+    data_folder_path = 'PATH\\TO\\GPS Data\\'
     data_folder = os.path.join(data_folder_path, run_num)
 
-    DATA_FILE = 'C:\\Users\\alexc\\Desktop\\KoForce GPS DAQ\\ESP 32\\joined_file.txt' #Automatically use joined file
+    DATA_FILE = 'PATH\\TO\\joined_file.txt' #Automatically use joined file
 
     #file_joiner()
     #read_data(DATA_FILE, False) #Call read data with joined file
@@ -1367,12 +1367,12 @@ if __name__ == "__main__":
     expected_counts = np.array((BH_rate, arr_rate * 428, arr_rate*585.6, arr_rate*375.1, arr_rate*437.1, arr_rate*307.2, 
                         arr_rate*348.7, arr_rate*518, arr_rate*455.4, arr_rate*350.2, arr_rate*478.1))
 
-    folder_path = 'C:\\Users\\aclark2\\Desktop\\ESP 32\\GPS Data\\Run20251007'
+    folder_path = 'PATH\\TO\\GPS Data\\Run20251007'
 
     DATA_LIST = folder_reader(folder_path)
     print('DATA_LIST:', DATA_LIST)
 
-    error_file = "C:\\Users\\aclark2\\Desktop\\ESP 32\\GPS Data\\Run20251008\\error_log.txt"
+    error_file = "PATH\\TO\\GPS Data\\Run20251008\\error_log.txt"
 
     file_reader_plotter(DATA_LIST, Mode = 1)
 

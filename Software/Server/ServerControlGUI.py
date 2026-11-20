@@ -14,7 +14,7 @@ from collections import defaultdict, deque
 from matplotlib.figure import Figure
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 
-SERVER_SCRIPT = r"//home//alexc//Array Server//GPS_DAQ_Server.py"
+SERVER_SCRIPT = r"PATH/TO/GPS_DAQ_Server.py"
 SERVER_CWD = os.path.dirname(SERVER_SCRIPT)
 GPS_DATA_DIR = os.path.join(SERVER_CWD, "GPS Data")
 SURVEY_RESULTS_DIR = os.path.join(SERVER_CWD, "Survey Results")

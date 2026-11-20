@@ -34,9 +34,9 @@ global tcoll0
 tcoll0=0
 
 # ---------- Wi-Fi Setup ----------
-ssid = 'Test_Omada_Wi-Fi'
-#ssid = 'AirShower2.4G' 
-password = 'Air$shower24'
+ssid = 'YOUR_WIFI_SSID'
+#ssid = 'YOUR_ALT_WIFI_SSID'
+password = 'YOUR_WIFI_PASSWORD'
 
 wifi.con_to_wifi(ssid, password)
       
@@ -67,8 +67,8 @@ ip, subnet, gateway, dns = wifi.wlan.ifconfig()
 ip_last_byte = int(ip.split('.')[-1])
 print("ESP IP:", ip_last_byte)
 
-#HOST = '134.69.77.61' #Karbon Computer
-HOST = '192.168.0.27' #Local network
+#HOST = 'YOUR_SERVER_IP' #Karbon Computer
+HOST = 'YOUR_LOCAL_SERVER_IP' #Local network
 PORT = 12345
 
 # ---------- Socket Functions ----------

@@ -363,11 +363,11 @@ def clear_rx_buffer(sock, poller):
         print("Error during buffer clear:", e)
     
 # ---------- Wi-Fi Setup ----------
-#ssid = 'TP-Link_FB80'
-#password = 'Beau&River'
+#ssid = 'YOUR_ALT_WIFI_SSID'
+#password = 'YOUR_ALT_WIFI_PASSWORD'
 
-ssid = 'ONet'
-password = ''
+ssid = 'YOUR_WIFI_SSID'
+password = 'YOUR_WIFI_PASSWORD'
 
 #These can be moved to the main wifi function, but I thinks its more versitile to define them as globals
 wlan = network.WLAN(network.STA_IF)
@@ -377,9 +377,9 @@ con_to_wifi(ssid, password)
 mac_ID = wlan.config('mac')[-1]  # last byte of MAC
 print('mac id:', mac_ID)
 # ---------- Connecting to Server ----------
-#HOST = '192.168.0.93' #Home
-HOST = '134.69.233.83'
-#HOST = '134.69.218.243' #Karbon Computer
+#HOST = 'YOUR_LOCAL_SERVER_IP' #Home
+HOST = 'YOUR_SERVER_IP'
+#HOST = 'YOUR_ALT_SERVER_IP' #Karbon Computer
 PORT = 12345
 
 s = connect_socket(HOST,PORT)
